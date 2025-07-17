@@ -3,18 +3,24 @@ body {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
+
 }
 
 .container {
     background: #f5f5f5;
     padding: 20px;
     border-radius: 8px;
+    max-width: 500px;
+    margin: auto;
+   
 }
+
+
 
 input, textarea {
     display: block;
-    width: 100%;
-    margin-bottom: 10px;
+    width: 90%;
+    margin-bottom: 15px;
     padding: 8px;
 }
 
@@ -24,6 +30,7 @@ button {
     border: none;
     padding: 10px 15px;
     cursor: pointer;
+    margin-top: 10px;
 }
 
 .task {
@@ -53,7 +60,7 @@ button {
 .task {
     padding: 10px;
     margin-bottom: 10px;
-    border: 2px solid gray; /* default border */
+    border: 2px solid gray; 
     border-radius: 6px;
     transition: border-color 0.3s ease;
 }
@@ -66,3 +73,40 @@ button {
     border-color: green;
 }
 
+
+
+
+
+#register-modal{
+    display:none;
+    position: fixed;
+    top: 0;
+    left: 0; 
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5); 
+    justify-content: center;
+    align-items: center;
+}
+
+.register-block{
+    background: white;
+     padding: 20px;
+      border-radius: 8px;
+       width: 300px;
+}
+
+#register-cancel-btn{
+    margin-left: 9em;
+
+}
+
+
+#task-desc{
+    max-width: 500px;
+}
+
+
+#status-filter{
+    margin: 20px 0;
+}

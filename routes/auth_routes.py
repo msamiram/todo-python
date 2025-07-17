@@ -24,7 +24,7 @@ def register():
         db.session.add(user)
         db.session.commit()
     except Exception as e:
-        print("Registration error:", e)  # 👈 THIS will now show the real issue in terminal
+        print("Registration error:", e)  
         return jsonify({"error": "Registration failed"}), 500
 
 

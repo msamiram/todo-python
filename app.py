@@ -3,7 +3,6 @@ from extensions import db, jwt
 from config import Config
 from flask_cors import CORS
 
-# Route blueprints
 from routes.auth_routes import auth_bp
 from routes.task_routes import task_bp
 from routes.user_routes import user_bp
@@ -16,9 +15,6 @@ def create_app():
     CORS(app, origins=["http://127.0.0.1:5000", "http://localhost:5000"])
     db.init_app(app)
     jwt.init_app(app)
-
-    from models.user import User
-    from models.task import Task
 
     app.register_blueprint(auth_bp)
     app.register_blueprint(task_bp)
